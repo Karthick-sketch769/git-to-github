@@ -1,7 +1,6 @@
 FROM python
 WORKDIR /map
-COPY /api_demo.py/map
-RUN pip install
+COPY ./api_demo.py/map
 EXPOSE 8000
-CMD ["pip", "start"]
+CMD ["python", "api_demo.py"]
 
