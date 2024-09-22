@@ -1,0 +1,7 @@
+service:
+  mysqldb:
+  image: 'mysql'
+  environment:
+    -MYSQL_ROOT_PASSWORD="root"
+    -MYSQL_DATABASE="HDFC"
+    container_name: "city"
